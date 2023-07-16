@@ -1,2 +1,2 @@
 # ARM-thumb Bare-metal Assembly
-## for the LPC824 using GNU Tools
+This project contains a collection of bare-metal assembly code for the NXP LPC824 using the GNU compiler toolchain.
