@@ -10,6 +10,7 @@ As an instructor who has been teaching embedded systems programming over 25 year
 2. <b>blink3LED</b>: An extension to the <b>blink</b> example which cycles though the RED, GREEN, and BLUE LEDs.
 3. <b>uart</b>: The code initializes USART0 in 8N1 UART mode at 9600 bps, and continuously transmits "A".
 4. <b>uart_mrt</b>: The UART example revisited with timing provided by MRT0.
+5. <b>blink_mrt_int</b>: Blinking LED uing the MRT) interrupt. 
 
 ## Credits
 This project is based on the work by Frank Duignan
