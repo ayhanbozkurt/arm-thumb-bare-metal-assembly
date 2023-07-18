@@ -2,10 +2,6 @@
 	.arch armv6-m
 	.thumb
 
-	.data
-
-	.section .bss
-
 	.section .vectors,"ax",%progbits
 	.word 0x10002000
 	.word _start+1
@@ -29,7 +25,7 @@ main:
 	strb r4, [r2, 16]
 	strb r3, [r2, 27]
 	bl   delay
-	b main
+	b    main
 	.align 2
 GPIO:	.word 0xA0000000	/* GPIO port base */
 
