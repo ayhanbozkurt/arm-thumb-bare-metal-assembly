@@ -1,0 +1,169 @@
+
+main.hex:     file format ihex
+
+
+Disassembly of section .sec1:
+
+00000000 <.sec1>:
+   0:	2000      	movs	r0, #0
+   2:	1000      	asrs	r0, r0, #32
+   4:	00c1      	lsls	r1, r0, #3
+   6:	0000      	movs	r0, r0
+   8:	0149      	lsls	r1, r1, #5
+   a:	0000      	movs	r0, r0
+   c:	0149      	lsls	r1, r1, #5
+   e:	0000      	movs	r0, r0
+  10:	0001      	movs	r1, r0
+  12:	0000      	movs	r0, r0
+  14:	0001      	movs	r1, r0
+  16:	0000      	movs	r0, r0
+  18:	0001      	movs	r1, r0
+  1a:	0000      	movs	r0, r0
+  1c:	0001      	movs	r1, r0
+  1e:	0000      	movs	r0, r0
+  20:	0001      	movs	r1, r0
+  22:	0000      	movs	r0, r0
+  24:	0001      	movs	r1, r0
+  26:	0000      	movs	r0, r0
+  28:	0001      	movs	r1, r0
+  2a:	0000      	movs	r0, r0
+  2c:	0149      	lsls	r1, r1, #5
+  2e:	0000      	movs	r0, r0
+  30:	0001      	movs	r1, r0
+  32:	0000      	movs	r0, r0
+  34:	0001      	movs	r1, r0
+  36:	0000      	movs	r0, r0
+  38:	0149      	lsls	r1, r1, #5
+  3a:	0000      	movs	r0, r0
+  3c:	0149      	lsls	r1, r1, #5
+  3e:	0000      	movs	r0, r0
+  40:	0149      	lsls	r1, r1, #5
+  42:	0000      	movs	r0, r0
+  44:	0149      	lsls	r1, r1, #5
+  46:	0000      	movs	r0, r0
+  48:	0149      	lsls	r1, r1, #5
+  4a:	0000      	movs	r0, r0
+  4c:	0149      	lsls	r1, r1, #5
+  4e:	0000      	movs	r0, r0
+  50:	0149      	lsls	r1, r1, #5
+  52:	0000      	movs	r0, r0
+  54:	0149      	lsls	r1, r1, #5
+  56:	0000      	movs	r0, r0
+  58:	0149      	lsls	r1, r1, #5
+  5a:	0000      	movs	r0, r0
+  5c:	0149      	lsls	r1, r1, #5
+  5e:	0000      	movs	r0, r0
+  60:	0149      	lsls	r1, r1, #5
+  62:	0000      	movs	r0, r0
+  64:	0149      	lsls	r1, r1, #5
+  66:	0000      	movs	r0, r0
+  68:	011d      	lsls	r5, r3, #4
+  6a:	0000      	movs	r0, r0
+  6c:	0149      	lsls	r1, r1, #5
+  6e:	0000      	movs	r0, r0
+  70:	0149      	lsls	r1, r1, #5
+  72:	0000      	movs	r0, r0
+  74:	0149      	lsls	r1, r1, #5
+  76:	0000      	movs	r0, r0
+  78:	0149      	lsls	r1, r1, #5
+  7a:	0000      	movs	r0, r0
+  7c:	0149      	lsls	r1, r1, #5
+  7e:	0000      	movs	r0, r0
+  80:	0149      	lsls	r1, r1, #5
+  82:	0000      	movs	r0, r0
+  84:	0149      	lsls	r1, r1, #5
+  86:	0000      	movs	r0, r0
+  88:	0149      	lsls	r1, r1, #5
+  8a:	0000      	movs	r0, r0
+  8c:	0149      	lsls	r1, r1, #5
+  8e:	0000      	movs	r0, r0
+  90:	0149      	lsls	r1, r1, #5
+  92:	0000      	movs	r0, r0
+  94:	0149      	lsls	r1, r1, #5
+  96:	0000      	movs	r0, r0
+  98:	0149      	lsls	r1, r1, #5
+  9a:	0000      	movs	r0, r0
+  9c:	0149      	lsls	r1, r1, #5
+  9e:	0000      	movs	r0, r0
+  a0:	0149      	lsls	r1, r1, #5
+  a2:	0000      	movs	r0, r0
+  a4:	0149      	lsls	r1, r1, #5
+  a6:	0000      	movs	r0, r0
+  a8:	0149      	lsls	r1, r1, #5
+  aa:	0000      	movs	r0, r0
+  ac:	0149      	lsls	r1, r1, #5
+  ae:	0000      	movs	r0, r0
+  b0:	0149      	lsls	r1, r1, #5
+  b2:	0000      	movs	r0, r0
+  b4:	0149      	lsls	r1, r1, #5
+  b6:	0000      	movs	r0, r0
+  b8:	0149      	lsls	r1, r1, #5
+  ba:	0000      	movs	r0, r0
+  bc:	0149      	lsls	r1, r1, #5
+  be:	0000      	movs	r0, r0
+  c0:	f000 f808 	bl	0xd4
+  c4:	f000 f80e 	bl	0xe4
+  c8:	f000 f816 	bl	0xf8
+  cc:	f000 f81e 	bl	0x10c
+  d0:	b662      	cpsie	i
+  d2:	e7fe      	b.n	0xd2
+  d4:	4a01      	ldr	r2, [pc, #4]	; (0xdc)
+  d6:	4b02      	ldr	r3, [pc, #8]	; (0xe0)
+  d8:	6013      	str	r3, [r2, #0]
+  da:	46f7      	mov	pc, lr
+  dc:	2000      	movs	r0, #0
+  de:	a000      	add	r0, pc, #0	; (adr r0, 0xe0)
+  e0:	1000      	asrs	r0, r0, #32
+  e2:	0000      	movs	r0, r0
+  e4:	4a02      	ldr	r2, [pc, #8]	; (0xf0)
+  e6:	4c03      	ldr	r4, [pc, #12]	; (0xf4)
+  e8:	6813      	ldr	r3, [r2, #0]
+  ea:	4323      	orrs	r3, r4
+  ec:	6013      	str	r3, [r2, #0]
+  ee:	46f7      	mov	pc, lr
+  f0:	8080      	strh	r0, [r0, #4]
+  f2:	4004      	ands	r4, r0
+  f4:	0400      	lsls	r0, r0, #16
+  f6:	0000      	movs	r0, r0
+  f8:	4a02      	ldr	r2, [pc, #8]	; (0x104)
+  fa:	4b03      	ldr	r3, [pc, #12]	; (0x108)
+  fc:	6013      	str	r3, [r2, #0]
+  fe:	2301      	movs	r3, #1
+ 100:	6093      	str	r3, [r2, #8]
+ 102:	46f7      	mov	pc, lr
+ 104:	4000      	ands	r0, r0
+ 106:	4000      	ands	r0, r0
+ 108:	8d7f      	ldrh	r7, [r7, #42]	; 0x2a
+ 10a:	005b      	lsls	r3, r3, #1
+ 10c:	4a01      	ldr	r2, [pc, #4]	; (0x114)
+ 10e:	4b02      	ldr	r3, [pc, #8]	; (0x118)
+ 110:	6013      	str	r3, [r2, #0]
+ 112:	46f7      	mov	pc, lr
+ 114:	e100      	b.n	0x318
+ 116:	e000      	b.n	0x11a
+ 118:	0400      	lsls	r0, r0, #16
+ 11a:	0000      	movs	r0, r0
+ 11c:	b58c      	push	{r2, r3, r7, lr}
+ 11e:	4a05      	ldr	r2, [pc, #20]	; (0x134)
+ 120:	4b05      	ldr	r3, [pc, #20]	; (0x138)
+ 122:	6013      	str	r3, [r2, #0]
+ 124:	4a07      	ldr	r2, [pc, #28]	; (0x144)
+ 126:	2301      	movs	r3, #1
+ 128:	6013      	str	r3, [r2, #0]
+ 12a:	4a04      	ldr	r2, [pc, #16]	; (0x13c)
+ 12c:	4b04      	ldr	r3, [pc, #16]	; (0x140)
+ 12e:	6013      	str	r3, [r2, #0]
+ 130:	bd8c      	pop	{r2, r3, r7, pc}
+ 132:	46c0      	nop			; (mov r8, r8)
+ 134:	2300      	movs	r3, #0
+ 136:	a000      	add	r0, pc, #0	; (adr r0, 0x138)
+ 138:	1000      	asrs	r0, r0, #32
+ 13a:	0000      	movs	r0, r0
+ 13c:	e280      	b.n	0x640
+ 13e:	e000      	b.n	0x142
+ 140:	0400      	lsls	r0, r0, #16
+ 142:	0000      	movs	r0, r0
+ 144:	400c      	ands	r4, r1
+ 146:	4000      	ands	r0, r0
+ 148:	e7fe      	b.n	0x148
+ 14a:	46c0      	nop			; (mov r8, r8)
