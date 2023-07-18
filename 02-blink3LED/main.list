@@ -1,0 +1,49 @@
+
+main.hex:     file format ihex
+
+
+Disassembly of section .sec1:
+
+00000000 <.sec1>:
+   0:	2000      	movs	r0, #0
+   2:	1000      	asrs	r0, r0, #32
+   4:	00c1      	lsls	r1, r0, #3
+	...
+
+Disassembly of section .sec2:
+
+000000c0 <.sec2>:
+  c0:	f000 f816 	bl	0xf0
+  c4:	4a09      	ldr	r2, [pc, #36]	; (0xec)
+  c6:	2300      	movs	r3, #0
+  c8:	2401      	movs	r4, #1
+  ca:	7313      	strb	r3, [r2, #12]
+  cc:	7414      	strb	r4, [r2, #16]
+  ce:	76d4      	strb	r4, [r2, #27]
+  d0:	f000 f816 	bl	0x100
+  d4:	7314      	strb	r4, [r2, #12]
+  d6:	7413      	strb	r3, [r2, #16]
+  d8:	76d4      	strb	r4, [r2, #27]
+  da:	f000 f811 	bl	0x100
+  de:	7314      	strb	r4, [r2, #12]
+  e0:	7414      	strb	r4, [r2, #16]
+  e2:	76d3      	strb	r3, [r2, #27]
+  e4:	f000 f80c 	bl	0x100
+  e8:	e7ef      	b.n	0xca
+  ea:	46c0      	nop			; (mov r8, r8)
+  ec:	0000      	movs	r0, r0
+  ee:	a000      	add	r0, pc, #0	; (adr r0, 0xf0)
+  f0:	4a01      	ldr	r2, [pc, #4]	; (0xf8)
+  f2:	4b02      	ldr	r3, [pc, #8]	; (0xfc)
+  f4:	6013      	str	r3, [r2, #0]
+  f6:	46f7      	mov	pc, lr
+  f8:	2000      	movs	r0, #0
+  fa:	a000      	add	r0, pc, #0	; (adr r0, 0xfc)
+  fc:	1000      	asrs	r0, r0, #32
+  fe:	0801      	lsrs	r1, r0, #32
+ 100:	4f01      	ldr	r7, [pc, #4]	; (0x108)
+ 102:	3f01      	subs	r7, #1
+ 104:	d1fd      	bne.n	0x102
+ 106:	46f7      	mov	pc, lr
+ 108:	a120      	add	r1, pc, #128	; (adr r1, 0x18c)
+ 10a:	0007      	movs	r7, r0
