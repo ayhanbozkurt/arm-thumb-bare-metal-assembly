@@ -1,0 +1,98 @@
+
+main.hex:     file format ihex
+
+
+Disassembly of section .sec1:
+
+00000000 <.sec1>:
+   0:	2000      	movs	r0, #0
+   2:	1000      	asrs	r0, r0, #32
+   4:	00c1      	lsls	r1, r0, #3
+	...
+
+Disassembly of section .sec2:
+
+000000c0 <.sec2>:
+  c0:	f000 f81c 	bl	0xfc
+  c4:	f000 f822 	bl	0x10c
+  c8:	f000 f82a 	bl	0x120
+  cc:	f000 f840 	bl	0x150
+  d0:	4d08      	ldr	r5, [pc, #32]	; (0xf4)
+  d2:	2641      	movs	r6, #65	; 0x41
+  d4:	4a08      	ldr	r2, [pc, #32]	; (0xf8)
+  d6:	6813      	ldr	r3, [r2, #0]
+  d8:	2401      	movs	r4, #1
+  da:	4023      	ands	r3, r4
+  dc:	d004      	beq.n	0xe8
+  de:	6013      	str	r3, [r2, #0]
+  e0:	4a02      	ldr	r2, [pc, #8]	; (0xec)
+  e2:	4b09      	ldr	r3, [pc, #36]	; (0x108)
+  e4:	6013      	str	r3, [r2, #0]
+  e6:	602e      	str	r6, [r5, #0]
+  e8:	e7f4      	b.n	0xd4
+  ea:	46c0      	nop			; (mov r8, r8)
+  ec:	2300      	movs	r3, #0
+  ee:	a000      	add	r0, pc, #0	; (adr r0, 0xf0)
+  f0:	0000      	movs	r0, r0
+  f2:	a000      	add	r0, pc, #0	; (adr r0, 0xf4)
+  f4:	401c      	ands	r4, r3
+  f6:	4006      	ands	r6, r0
+  f8:	400c      	ands	r4, r1
+  fa:	4000      	ands	r0, r0
+  fc:	4a01      	ldr	r2, [pc, #4]	; (0x104)
+  fe:	4b02      	ldr	r3, [pc, #8]	; (0x108)
+ 100:	6013      	str	r3, [r2, #0]
+ 102:	46f7      	mov	pc, lr
+ 104:	2000      	movs	r0, #0
+ 106:	a000      	add	r0, pc, #0	; (adr r0, 0x108)
+ 108:	1000      	asrs	r0, r0, #32
+ 10a:	0000      	movs	r0, r0
+ 10c:	4a02      	ldr	r2, [pc, #8]	; (0x118)
+ 10e:	4c03      	ldr	r4, [pc, #12]	; (0x11c)
+ 110:	6813      	ldr	r3, [r2, #0]
+ 112:	4323      	orrs	r3, r4
+ 114:	6013      	str	r3, [r2, #0]
+ 116:	46f7      	mov	pc, lr
+ 118:	8080      	strh	r0, [r0, #4]
+ 11a:	4004      	ands	r4, r0
+ 11c:	4400      	add	r0, r0
+ 11e:	0000      	movs	r0, r0
+ 120:	4a06      	ldr	r2, [pc, #24]	; (0x13c)
+ 122:	4b07      	ldr	r3, [pc, #28]	; (0x140)
+ 124:	6013      	str	r3, [r2, #0]
+ 126:	4a07      	ldr	r2, [pc, #28]	; (0x144)
+ 128:	2301      	movs	r3, #1
+ 12a:	7013      	strb	r3, [r2, #0]
+ 12c:	4a06      	ldr	r2, [pc, #24]	; (0x148)
+ 12e:	234d      	movs	r3, #77	; 0x4d
+ 130:	6013      	str	r3, [r2, #0]
+ 132:	4a06      	ldr	r2, [pc, #24]	; (0x14c)
+ 134:	2305      	movs	r3, #5
+ 136:	6013      	str	r3, [r2, #0]
+ 138:	46f7      	mov	pc, lr
+ 13a:	46c0      	nop			; (mov r8, r8)
+ 13c:	c000      	stmia	r0!, {}
+ 13e:	4000      	ands	r0, r0
+ 140:	0004      	movs	r4, r0
+ 142:	ffff 8094 	vshr.u64	d24, d4, #1
+ 146:	4004      	ands	r4, r0
+ 148:	4020      	ands	r0, r4
+ 14a:	4006      	ands	r6, r0
+ 14c:	4000      	ands	r0, r0
+ 14e:	4006      	ands	r6, r0
+ 150:	4a01      	ldr	r2, [pc, #4]	; (0x158)
+ 152:	4b02      	ldr	r3, [pc, #8]	; (0x15c)
+ 154:	6013      	str	r3, [r2, #0]
+ 156:	46f7      	mov	pc, lr
+ 158:	4000      	ands	r0, r0
+ 15a:	4000      	ands	r0, r0
+ 15c:	8d7f      	ldrh	r7, [r7, #42]	; 0x2a
+ 15e:	005b      	lsls	r3, r3, #1
+ 160:	4f02      	ldr	r7, [pc, #8]	; (0x16c)
+ 162:	46c0      	nop			; (mov r8, r8)
+ 164:	46c0      	nop			; (mov r8, r8)
+ 166:	3f01      	subs	r7, #1
+ 168:	d1fb      	bne.n	0x162
+ 16a:	46f7      	mov	pc, lr
+ 16c:	a120      	add	r1, pc, #128	; (adr r1, 0x1f0)
+ 16e:	0007      	movs	r7, r0
