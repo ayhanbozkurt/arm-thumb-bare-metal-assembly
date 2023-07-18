@@ -2,10 +2,6 @@
 	.arch armv6-m
 	.thumb
 
-	.data
-
-	.section .bss
-
 	.section .vectors,"ax",%progbits
 	.word 0x10002000
 	.word _start+1
