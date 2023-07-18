@@ -1,0 +1,80 @@
+
+main.hex:     file format ihex
+
+
+Disassembly of section .sec1:
+
+00000000 <.sec1>:
+   0:	2000      	movs	r0, #0
+   2:	1000      	asrs	r0, r0, #32
+   4:	00c1      	lsls	r1, r0, #3
+	...
+
+Disassembly of section .sec2:
+
+000000c0 <.sec2>:
+  c0:	f000 f814 	bl	0xec
+  c4:	f000 f81a 	bl	0xfc
+  c8:	4a06      	ldr	r2, [pc, #24]	; (0xe4)
+  ca:	4d07      	ldr	r5, [pc, #28]	; (0xe8)
+  cc:	2300      	movs	r3, #0
+  ce:	2401      	movs	r4, #1
+  d0:	2641      	movs	r6, #65	; 0x41
+  d2:	7313      	strb	r3, [r2, #12]
+  d4:	f000 f832 	bl	0x13c
+  d8:	7314      	strb	r4, [r2, #12]
+  da:	f000 f82f 	bl	0x13c
+  de:	602e      	str	r6, [r5, #0]
+  e0:	e7f7      	b.n	0xd2
+  e2:	46c0      	nop			; (mov r8, r8)
+  e4:	0000      	movs	r0, r0
+  e6:	a000      	add	r0, pc, #0	; (adr r0, 0xe8)
+  e8:	401c      	ands	r4, r3
+  ea:	4006      	ands	r6, r0
+  ec:	4a01      	ldr	r2, [pc, #4]	; (0xf4)
+  ee:	4b02      	ldr	r3, [pc, #8]	; (0xf8)
+  f0:	6013      	str	r3, [r2, #0]
+  f2:	46f7      	mov	pc, lr
+  f4:	2000      	movs	r0, #0
+  f6:	a000      	add	r0, pc, #0	; (adr r0, 0xf8)
+  f8:	1000      	asrs	r0, r0, #32
+  fa:	0000      	movs	r0, r0
+  fc:	4a08      	ldr	r2, [pc, #32]	; (0x120)
+  fe:	4c09      	ldr	r4, [pc, #36]	; (0x124)
+ 100:	6813      	ldr	r3, [r2, #0]
+ 102:	4323      	orrs	r3, r4
+ 104:	6013      	str	r3, [r2, #0]
+ 106:	4a08      	ldr	r2, [pc, #32]	; (0x128)
+ 108:	4b08      	ldr	r3, [pc, #32]	; (0x12c)
+ 10a:	6013      	str	r3, [r2, #0]
+ 10c:	4a08      	ldr	r2, [pc, #32]	; (0x130)
+ 10e:	2301      	movs	r3, #1
+ 110:	7013      	strb	r3, [r2, #0]
+ 112:	4a08      	ldr	r2, [pc, #32]	; (0x134)
+ 114:	234d      	movs	r3, #77	; 0x4d
+ 116:	6013      	str	r3, [r2, #0]
+ 118:	4a07      	ldr	r2, [pc, #28]	; (0x138)
+ 11a:	2305      	movs	r3, #5
+ 11c:	6013      	str	r3, [r2, #0]
+ 11e:	46f7      	mov	pc, lr
+ 120:	8080      	strh	r0, [r0, #4]
+ 122:	4004      	ands	r4, r0
+ 124:	4000      	ands	r0, r0
+ 126:	0000      	movs	r0, r0
+ 128:	c000      	stmia	r0!, {}
+ 12a:	4000      	ands	r0, r0
+ 12c:	0004      	movs	r4, r0
+ 12e:	ffff 8094 	vshr.u64	d24, d4, #1
+ 132:	4004      	ands	r4, r0
+ 134:	4020      	ands	r0, r4
+ 136:	4006      	ands	r6, r0
+ 138:	4000      	ands	r0, r0
+ 13a:	4006      	ands	r6, r0
+ 13c:	4f02      	ldr	r7, [pc, #8]	; (0x148)
+ 13e:	46c0      	nop			; (mov r8, r8)
+ 140:	46c0      	nop			; (mov r8, r8)
+ 142:	3f01      	subs	r7, #1
+ 144:	d1fb      	bne.n	0x13e
+ 146:	46f7      	mov	pc, lr
+ 148:	a120      	add	r1, pc, #128	; (adr r1, 0x1cc)
+ 14a:	0007      	movs	r7, r0
